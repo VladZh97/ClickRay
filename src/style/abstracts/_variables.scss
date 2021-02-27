@@ -1,0 +1,35 @@
+$font: "Poppins", sans-serif;
+
+// MEDIA QUERIES
+$xl: 1200px;
+$lg: 992px;
+$md: 768px;
+$sm: 576px;
+
+// CONTAINER
+.container {
+  width: 100%;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: $xl) {
+  .container {
+    width: 1170px;
+  }
+}
+@media screen and (max-width: $lg - 1px) {
+  .container {
+    width: 970px;
+  }
+}
+@media screen and (max-width: $md - 1px) {
+  .container {
+    width: 750px;
+  }
+}
+@media screen and (max-width: $sm - 1px) {
+  .container {
+    width: 540px;
+  }
+}

@@ -5,6 +5,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ClickRay</title>
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
+    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+    crossorigin="anonymous" />
   <link rel="stylesheet" href="src/style/style.scss">
 </head>
 <body>
@@ -15,7 +20,7 @@
 
         <div class="header__right">
           <div class="header__logo">
-            <img src="./src/image/logo.png" alt="logo" class="header__logo-image">
+            <img src="./src/image/logo.png" alt="logo" class="header__logo-image logo">
           </div>
         </div>
 
@@ -87,7 +92,7 @@
             </ul>
           </nav>
           <div class="header__search search">
-            <img src="./src/image/search.png" alt="search" class="search__icon">
+            <i class="fas fa-search"></i>
             <input type="text" class="search__input">
           </div>
         </div>
@@ -96,6 +101,91 @@
     </div>
   </header>
   <!-- END HEADER -->
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__container container">
+        <div class="footer__left">
+          <div class="footer__logo">
+            <a href="#" class="footer__logo-link">
+              <img src="./src/image/logo.png" alt="logo" class="footer__logo-image logo">
+            </a>
+          </div>
+          <p class="footer__des">
+            Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit. In magna tortor, imperdiet vel laoreet sit amet, tristique ut enim. Donec eleifend tortor id eros pulvinar convallis. Sed laoreet est eros, at facilisis nisi interdum a.
+          </p>
+        </div>
+        <div class="footer__right">
+
+          <div class="footer-links">
+            <h3 class="footer-links__title footer__title">Fast Links</h3>
+            <nav class="footer-links__menu">
+              <ul class="footer-links__list">
+                <li class="footer-links__item">
+                  <a href="#" class="footer-links__link">About Us</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="#" class="footer-links__link">Case Study</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="#" class="footer-links__link">Services</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="#" class="footer-links__link">Blog</a>
+                </li>
+                <li class="footer-links__item">
+                  <a href="#" class="footer-links__link">FAQs</a>
+                </li>
+              </ul>
+            </nav>
+
+          </div>
+
+          <div class="footer-contact">
+            <h3 class="footer-contact__title footer__title">Contact Us</h3>
+            <div class="footer-contact__items">
+              <p class="footer-contact__item">
+                Phone: 
+                <a href="tel:+48 123 456 789" class="footer-contact__link">+48 123 456 789</a>
+              </p>
+              <p class="footer-contact__item">
+                Email: 
+                <a href="mailto:hello@clickray.eu" class="footer-contact__link">hello@clickray.eu</a>
+              </p>
+              <p class="footer-contact__item">
+                Adress: Łazarza 19, Kraków, Poland
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-bottom__copy">
+            &copy; Copyrights 2016 All Rights Reserved by Clickray.
+          </p>
+          <div class="footer-bottom__icons">
+            <a href="#" class="footer-bottom__link">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="footer-bottom__link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-bottom__link">
+              <i class="fab fa-pinterest-p"></i>
+            </a>
+            <a href="#" class="footer-bottom__link">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="footer-bottom__link">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END FOOTER -->
   
   <script src="src/js/script.js"></script>
 </body>

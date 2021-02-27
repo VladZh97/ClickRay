@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="src/style/style.scss">
 </head>
 <body>
+
   <!-- HEADER -->
   <header class="header">
     <div class="header__inner">
@@ -20,7 +21,9 @@
 
         <div class="header__right">
           <div class="header__logo">
-            <img src="./src/image/logo.png" alt="logo" class="header__logo-image logo">
+            <a href="#" class="header__logo-link">
+              <img src="./src/image/logo.png" alt="logo" class="header__logo-image logo">
+            </a>
           </div>
         </div>
 
@@ -33,10 +36,11 @@
               <li class="header__item">
                 <a href="#" class="header__link">Pages</a>
 
+                <!-- PAGES SUBMENU -->
                 <ul class="header-sub">
                   <li class="header-sub__item">
                     <a href="#" class="header-sub__link">About us</a>
-
+                    <!-- ABOUT SUBMENU -->
                     <ul class="about-sub">
                       <li class="about-sub__item">
                         <a href="#" class="about-sub__link">Case Study</a>
@@ -54,7 +58,7 @@
                         <a href="#" class="about-sub__link">404</a>
                       </li>
                     </ul>
-
+                    <!-- END ABOUT SUBMENU -->
                   </li>
                   <li class="header-sub__item">
                     <a href="#" class="header-sub__link">Case Study</a>
@@ -78,6 +82,7 @@
                     <a href="#" class="header-sub__link">Search Results</a>
                   </li>
                 </ul>
+                <!-- END PAGES SUBMENU -->
 
               </li>
               <li class="header__item">
@@ -101,6 +106,146 @@
     </div>
   </header>
   <!-- END HEADER -->
+
+  <main class="main">
+    <!-- SECTION BANER -->
+      <section class="baner">
+        <div class="baner__inner">
+          <h1 class="baner__title">Product</h1>
+          <h2 class="baner__subtitle">Lorem ipsum dolor sit consectetur adipiscing elit.</h2>
+        </div>
+      </section>
+    <!-- END SECTION BANER -->
+
+    <!-- DASHBOARD -->
+    <section class="dashboard">
+      <div class="dashboard__inner">
+        <div class="dashboard__container container">
+          <div class="dashboard__image">
+            <img src="./src/image/dashboard.png" alt="dashboard" class="dashboard__img">
+          </div>
+          <div class="dashboard__des">
+            <h2 class="dashboard__title">Lorem ipsum dolor sit amet, consectetur. </h2>
+            <p class="dashboard__des">Maecenas finibus accumsan eros vel elementum. Nam bibendum a ante in ornare. Aliquam non sodales risus.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END DASHBOARD -->
+
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about__inner">
+        <div class="about__container container">
+          <div class="about__items">
+            <div class="about__item">
+              <img src="./src/image/about-1.png" alt="about" class="about__item-image">
+              <h3 class="about__item-title">Nulla porta, lacus</h3>
+              <p class="about__item-des">Porta tincidunt, sapien tellus tempor mauris, at ultrices sapien velit sit amet neque. Sed aliquet tortor vel orci facilisis, ut vestibu.</p>
+            </div>
+            <div class="about__item">
+              <img src="./src/image/about-2.png" alt="about" class="about__item-image">
+              <h3 class="about__item-title">Nulla porta, lacus</h3>
+              <p class="about__item-des">Porta tincidunt, sapien tellus tempor mauris, at ultrices sapien velit sit amet neque. Sed aliquet tortor vel orci facilisis, ut vestibu.</p>
+            </div>
+            <div class="about__item">
+              <img src="./src/image/about-2.png" alt="about" class="about__item-image">
+              <h3 class="about__item-title">Nulla porta, lacus</h3>
+              <p class="about__item-des">Porta tincidunt, sapien tellus tempor mauris, at ultrices sapien velit sit amet neque. Sed aliquet tortor vel orci facilisis, ut vestibu.</p>
+            </div>
+          </div>
+          <a href="#" class="about__more">See More Revolution</a>
+        </div>
+      </div>
+    </section>
+    <!-- END ABOUT -->
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial">
+      <div class="testimonial__inner">
+        <div class="testimonial__items">
+          <div class="testimonial__item">
+            <div class="testimonial__item-container container">
+              <p class="testimonial__item-text">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. In magna tortor, imperdiet vel laoreet sit amet, tristique ut enim. Donec eleifend tortor id eros pulvinar convallis. Sed laoreet est eros, at facilisis nisi interdum a.”</p>
+              <p class="testimonial__item-autor">John Doe, Project manager</p>
+              <button class="testimonial__item-btn">
+                <img src="./src/image/play.png" alt="play button" class="testimonial__item-image">
+              </button>
+              <p class="testimonial__item-action">Play movie</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial__people">
+          <div class="testimonial__person">
+            <img src="./src/image/testimonial/person-1.jpg" alt="person" class="testimonial__person-image">
+            <img src="./src/image/testimonial/testimonial-logo.png" alt="person logo" class="testimonial__person-logo">
+          </div>
+          <div class="testimonial__person">
+            <img src="./src/image/testimonial/person-2.jpg" alt="person" class="testimonial__person-image">
+            <img src="./src/image/testimonial/testimonial-logo.png" alt="person logo" class="testimonial__person-logo">
+          </div>
+          <div class="testimonial__person">
+            <img src="./src/image/testimonial/person-3.jpg" alt="person" class="testimonial__person-image">
+            <img src="./src/image/testimonial/testimonial-logo.png" alt="person logo" class="testimonial__person-logo">
+          </div>
+          <div class="testimonial__person">
+            <img src="./src/image/testimonial/person-4.jpg" alt="person" class="testimonial__person-image">
+            <img src="./src/image/testimonial/testimonial-logo.png" alt="person logo" class="testimonial__person-logo">
+          </div>
+          <div class="testimonial__person">
+            <img src="./src/image/testimonial/person-5.jpg" alt="person" class="testimonial__person-image">
+            <img src="./src/image/testimonial/testimonial-logo.png" alt="person logo" class="testimonial__person-logo">
+          </div>
+        </div>
+        <div class="testimonial__description">
+          <h2 class="testimonial__title">Donec nec diam pellentesque, tempor odio eget, pulvinar justo.  </h2>
+          <div class="testimonial__des">
+            <p class="testimonial__text">
+              Maecenas finibus accumsan eros vel elementum. Nam bibendum a ante in ornare. Aliquam non sodales risus. Donec nec diam pellentesque, tempor odio eget, pulvinar justo.
+            </p>
+            <p class="testimonial__text">
+              <span>Nulla porta, lacus at porta tincidunt, sapien tellus tempor mauris, at ultrices sapien velit.</span> Empor odio eget, pulvinar justo. Maecenas finibus accumsan eros vel elementum. Nam bibendum a ante in ornare. Aliquam non sodales risus. Donec nec diam pellentesque, tempor odio eget, pulvinar justo.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END TESTIMONIAL -->
+
+
+    <!-- WORK -->
+    <section class="work">
+      <div class="work__inner">
+        <div class="work__container container">
+          <div class="work__left">
+            <p class="work__text">Aenean bibendum lacus sed ex commodo, pretium rutrum turpis elementum.</p>
+            <a href="#" class="work__link">Check it</a>
+          </div>
+          <div class="work__right">
+            <img src="./src/image/work.png" alt="work" class="work__image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END WORK -->
+
+    <!-- COMPANIES -->
+    <section class="companies">
+      <div class="companies__inner">
+        <div class="companies__container container">
+          <div class="companies__list">
+            <div class="companies__item">
+              <img src="./src/image/testimonial/testimonial-logo.png" alt="company" class="companies__image">
+              <img src="./src/image/testimonial/testimonial-logo.png" alt="company" class="companies__image">
+              <img src="./src/image/testimonial/testimonial-logo.png" alt="company" class="companies__image">
+              <img src="./src/image/testimonial/testimonial-logo.png" alt="company" class="companies__image">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END COMPANIES -->
+  </main>
 
   <!-- FOOTER -->
   <footer class="footer">

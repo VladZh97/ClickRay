@@ -1,5 +1,6 @@
 import tabs from './modules/tabs';
 import popup from './modules/popup';
+import burger from './modules/burger';
 
 window.addEventListener("DOMContentLoaded", () => {
 
@@ -7,7 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
 const searchIcon = document.querySelector('.fa-search'),
       searchInput = document.querySelector('.search__input');
 
-      
+
 document.addEventListener('click', (e) => {
   if(e.target !== searchIcon && 
      e.target !== searchInput) {
@@ -20,8 +21,9 @@ searchIcon.addEventListener('click', showInput)
 
 
 // MODULES
-tabs('.testimonial__people', '.testimonial__person-image', '.testimonial__item');
+tabs();
 popup();
+burger();
 
 })
 

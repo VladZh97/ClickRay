@@ -14,9 +14,23 @@ menuBtn.addEventListener('click', () => {
         menuBtn.classList.remove('open');
         menuTop.classList.remove('active');
         menuOpen = false;
-        html.style.overflowY = "auto";
     }
 });
+
+document.addEventListener('click', (e) => {
+    const targetName = e.target.tagName;
+    if(e.target !== menuTop &&
+        e.target !== menuBtn &&
+        targetName !== "INPUT" &&
+        targetName !== "A" &&
+        targetName !== "I") {
+        menuBtn.classList.remove('open');
+        menuTop.classList.remove('active');
+        menuOpen = false;
+    }
+
+    console.log(e.target)
+})
 
 }
 

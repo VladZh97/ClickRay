@@ -1,6 +1,6 @@
 .header {
   &__inner {
-    padding: 28px 0 24px;
+    padding: 28px 0 22px;
     box-shadow: 0px 11px 14px -7px rgba(0, 0, 0, 0.6);
   }
 
@@ -135,6 +135,139 @@
         &.active {
           transform: translateY(-50%) scaleX(1);
         }
+      }
+    }
+  }
+  &__nav-search,
+  &__contact {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $md - 1px) {
+  .header {
+    ul,
+    li {
+      pointer-events: none;
+    }
+    a {
+      pointer-events: visible;
+    }
+    &__nav {
+      &-search {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #fff;
+        pointer-events: none;
+        .fa-search {
+          color: #fff;
+        }
+      }
+      &-input {
+        width: 100%;
+        background-color: transparent;
+        color: #fff;
+        font-size: 1.4rem;
+        border: none;
+        font-weight: 300;
+        padding-bottom: 5px;
+        pointer-events: all;
+        &::placeholder {
+          color: #fff;
+          font-weight: 300;
+        }
+      }
+    }
+    &__menu {
+      position: absolute;
+      top: 76px;
+      left: 0;
+      width: 450px;
+      z-index: 3;
+      background-color: #292935;
+      padding: 20px 27px;
+      transform-origin: top center;
+      transform: scaleY(0);
+      transition: all 0.2s ease-in-out;
+      &.active {
+        transform: scaleY(1);
+      }
+    }
+    &__list {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    &__item {
+      margin-top: 20px;
+    }
+    &__link {
+      color: #fff;
+      padding-bottom: 0;
+      &:hover {
+        color: #4044e6;
+        &::after {
+          display: none;
+        }
+      }
+    }
+
+    &-sub,
+    #about-sub .about-sub {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      padding: 0 0 0 15px;
+      &__link {
+        width: auto;
+        transform: none;
+        &:hover {
+          transform: translateX(10px);
+        }
+      }
+    }
+    #about-sub {
+      &::after {
+        content: "";
+      }
+    }
+    #pages,
+    .about-sub {
+      overflow: hidden;
+    }
+
+    &-sub,
+    .about-sub {
+      max-height: 0;
+      transition: all 0.4s ease-in-out;
+      transform: none;
+    }
+    &-sub {
+      &.active {
+        max-height: 440px;
+      }
+    }
+    .about-sub {
+      &.active {
+        max-height: 200px;
+      }
+    }
+
+    &__search {
+      display: none;
+    }
+
+    &__contact {
+      margin-top: 79px;
+      pointer-events: none;
+      &-title {
+        font-size: 1.8rem;
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 27px;
+      }
+      i {
+        pointer-events: visible;
       }
     }
   }

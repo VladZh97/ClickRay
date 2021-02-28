@@ -5,12 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ClickRay</title>
-  <link 
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" 
-    integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
-    crossorigin="anonymous" />
+  
   <link rel="stylesheet" href="./src/style/vendors/reset.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+
   <link rel="stylesheet" href="src/style/style.scss">
 </head>
 <body>
@@ -30,6 +28,10 @@
 
         <div class="header__left">
           <nav class="header__menu">
+            <div class="header__nav-search search">
+              <input type="text" placeholder="Search our site" class="header__nav-input">
+              <i class="fas fa-search"></i>
+            </div>
             <ul class="header__list">
               <li class="header__item">
                 <a href="#" class="header__link">Home</a>
@@ -96,6 +98,27 @@
                 <a href="#" class="header__link">Contact</a>
               </li>
             </ul>
+            <div class="header__contact">
+              <p class="header__contact-title">Follow us</p>
+              <div class="footer-bottom__icons">
+                <a href="#" class="footer-bottom__link">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="footer-bottom__link">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="footer-bottom__link">
+                  <i class="fab fa-pinterest-p"></i>
+                </a>
+                <a href="#" class="footer-bottom__link">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="footer-bottom__link">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+
           </nav>
           <div class="header__search search">
             <i class="fas fa-search"></i>
@@ -418,6 +441,8 @@
   </footer>
   <!-- END FOOTER -->
   
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
   <script src="src/js/script.js"></script>
 </body>
 </html>

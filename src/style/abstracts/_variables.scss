@@ -22,17 +22,23 @@ $sm: 576px;
     width: 1200px;
   }
 }
-@media screen and (max-width: $lg - 1px) {
+
+@media screen and (max-width: 1300px) {
+  .container {
+    width: 1170px;
+  }
+}
+@media screen and (max-width: $xl - 1px) {
   .container {
     width: 970px;
   }
 }
-@media screen and (max-width: $md - 1px) {
+@media screen and (max-width: $lg - 1px) {
   .container {
     width: 750px;
   }
 }
-@media screen and (max-width: $sm - 1px) {
+@media screen and (max-width: $md - 1px) {
   .container {
     width: 540px;
   }

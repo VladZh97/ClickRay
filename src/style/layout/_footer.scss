@@ -4,7 +4,8 @@
     background-color: #292935;
     color: #fff;
   }
-  &__container {
+  &__container,
+  &-bottom__container {
     display: flex;
     justify-content: space-between;
   }
@@ -14,7 +15,7 @@
   }
   &__des {
     margin-top: 50px;
-    margin-bottom: 0;
+    line-height: 26px;
   }
   &__right {
     display: flex;
@@ -27,42 +28,26 @@
   &__title {
     font-size: 3.6rem;
     font-weight: 300;
-    margin-top: 0;
     margin-bottom: 41px;
     line-height: 36px;
   }
   &-links {
-    font-size: 1.6rem;
-    line-height: 34px;
     margin-right: 60px;
-    &__list {
-      margin: 0;
-    }
   }
-  &-contact {
+  &-contact,
+  &-links {
     font-size: 1.6rem;
     line-height: 34px;
-    &__item {
-      margin: 0;
-    }
-  }
-  &-links {
-    &__list {
-      padding-left: 0;
-    }
   }
   &-bottom {
     background-color: #24242e;
     margin-top: 61px;
     &__container {
-      display: flex;
       align-items: center;
-      justify-content: space-between;
       padding: 30px 0 27px;
     }
     &__copy {
       font-size: 1.6rem;
-      margin: 0;
     }
     &__link {
       margin-right: 24px;

@@ -6,18 +6,20 @@ import toggleSubMenu from "./modules/menu"
 window.addEventListener("DOMContentLoaded", () => {
 
 // HEADER SEARCH
-const searchIcon = document.querySelector('.fa-search'),
+const searchIcon = document.querySelector('.search__icon'),
       searchInput = document.querySelector('.search__input');
 
 
 document.addEventListener('click', (e) => {
-  if(e.target !== searchIcon && 
+  if(e.target !== searchIcon &&
      e.target !== searchInput) {
-    searchInput.classList.remove('active')
+    searchInput.classList.remove('visible')
   }
+
+  console.log(e.target.tagName)
 })
 
-const showInput = () => searchInput.classList.toggle('active');
+const showInput = () => searchInput.classList.toggle('visible');
 searchIcon.addEventListener('click', showInput)
 
 // CAROUSEL

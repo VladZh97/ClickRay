@@ -43,3 +43,8 @@ $sm: 576px;
     width: 540px;
   }
 }
+@media screen and (max-width: $sm - 1px) {
+  .container {
+    width: 100%;
+  }
+}

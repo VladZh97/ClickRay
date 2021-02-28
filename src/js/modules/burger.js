@@ -28,8 +28,6 @@ document.addEventListener('click', (e) => {
         menuTop.classList.remove('active');
         menuOpen = false;
     }
-
-    console.log(e.target)
 })
 
 }

@@ -99,3 +99,35 @@
     }
   }
 }
+
+@media screen and (max-width: $sm - 1px) {
+  .footer {
+    &__inner {
+      padding-bottom: 0;
+    }
+    &__left {
+      max-width: 100%;
+      padding-right: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .footer {
+    &__title {
+      font-size: 2.6rem;
+      margin-bottom: 20px;
+    }
+
+    &-contact,
+    &-links {
+      font-size: 1.3rem;
+      line-height: 24px;
+    }
+    &-bottom {
+      &__copy {
+        font-size: 1.1rem;
+      }
+    }
+  }
+}

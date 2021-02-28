@@ -26,6 +26,8 @@
     position: relative;
     z-index: 1;
     color: #fff;
+    text-align: center;
+    padding: 0 15px;
   }
 
   &__title {
@@ -76,6 +78,14 @@
   .dashboard {
     &__img {
       width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: $sm - 1px) {
+  .dashboard {
+    &__des {
+      margin-top: 65px;
     }
   }
 }
@@ -158,6 +168,39 @@
       &:nth-child(2) {
         margin-top: 40px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: $sm - 1px) {
+  .about {
+    &__inner {
+      margin-top: 0;
+      margin-bottom: 96px;
+    }
+
+    &__item {
+      margin-top: 85px;
+      max-width: 85%;
+      &:nth-child(1) {
+        margin-top: 75px;
+      }
+      &:nth-child(2),
+      &:nth-child(3) {
+        margin-top: 85px;
+      }
+    }
+
+    &__more {
+      margin-top: 96px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .dashboard {
+    &__title {
+      font-size: 3rem;
     }
   }
 }
@@ -380,6 +423,65 @@
   }
 }
 
+@media screen and (max-width: $sm - 1px) {
+  .testimonial {
+    &__inner {
+      margin-bottom: 100px;
+    }
+    &__item {
+      &-container {
+        top: 82px;
+      }
+    }
+    &__people {
+      margin-top: -30px;
+    }
+    &__person {
+      margin-right: 16px;
+      width: 16%;
+      &-image {
+        width: 100%;
+        height: auto;
+      }
+      &-logo {
+        width: 100%;
+      }
+    }
+
+    &__video {
+      video {
+        width: 97%;
+        height: 270px;
+      }
+    }
+
+    &__description {
+      margin-top: 75px;
+      padding: 0 15px;
+    }
+    &__des {
+      margin-top: 41px;
+    }
+    &__title,
+    &__des {
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .testimonial {
+    &__item {
+      &-btn {
+        width: 90px;
+      }
+    }
+    &__title {
+      font-size: 3rem;
+    }
+  }
+}
+
 // WORK
 .work {
   &__inner {
@@ -548,6 +650,26 @@
     }
     &__right {
       display: none;
+    }
+  }
+}
+
+@media screen and (max-width: $sm - 1px) {
+  .work {
+    &__container {
+      padding-top: 0;
+      padding-left: 30px;
+    }
+    &__text {
+      margin-top: 78px;
+    }
+  }
+}
+
+@media screen and (max-width: 410px) {
+  .work {
+    &__text {
+      font-size: 3rem;
     }
   }
 }

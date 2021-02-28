@@ -1,3 +1,5 @@
+import sal from 'sal.js'
+
 import tabs from './modules/tabs';
 import popup from './modules/popup';
 import burger from './modules/burger';
@@ -22,6 +24,8 @@ document.addEventListener('click', (e) => {
 const showInput = () => searchInput.classList.toggle('visible');
 searchIcon.addEventListener('click', showInput)
 
+
+
 // CAROUSEL
 if(window.innerWidth <= 768) {
   const carouselList = document.querySelector('.companies__list');
@@ -39,8 +43,6 @@ if(window.innerWidth <= 768) {
 }
 
 
-
-
 // MODULES
 tabs();
 popup();
@@ -49,7 +51,21 @@ toggleSubMenu('#pages a', '.header-sub');
 toggleSubMenu('#about-sub a', '.about-sub');
 
 
+// SAL INIT
+sal({
+  threshold: 1,
+  once: false,
+});
 
+
+// SET STYLE TO BANER TITLE
+const title = document.querySelector('.baner__title'),
+      subtitle = document.querySelector('.baner__subtitle');
+
+      setTimeout(() => {
+        title.classList.add('active');
+        subtitle.classList.add('active');
+      }, 1000)
 
 })
 

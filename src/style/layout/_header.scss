@@ -19,7 +19,7 @@
     font-size: 1.6rem;
     color: #292935;
     font-weight: 400;
-    padding-bottom: 25px;
+    padding-bottom: 26px;
     &::after {
       content: "";
       position: absolute;
@@ -57,7 +57,7 @@
     visibility: hidden;
     transform: translateY(15px);
     bottom: -311px;
-    left: 0;
+    right: -40px;
     transition: all 0.3s ease-in-out;
   }
   &-sub,
@@ -69,6 +69,7 @@
     background-color: #292935;
     width: 301px;
     padding: 9px 28px 25px 35px;
+    z-index: 2;
     &__item {
       margin-top: 15px;
       width: 100%;

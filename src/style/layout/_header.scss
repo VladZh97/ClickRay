@@ -161,6 +161,7 @@
         pointer-events: none;
         .fa-search {
           color: #fff;
+          font-size: 13px;
         }
       }
       &-input {
@@ -180,7 +181,7 @@
     }
     &__menu {
       position: absolute;
-      top: 76px;
+      top: 50px;
       left: 0;
       width: 450px;
       z-index: 3;

@@ -28,6 +28,7 @@
     color: #fff;
     text-align: center;
     padding: 0 15px;
+    margin: 0 10px;
   }
 
   &__title {
@@ -207,8 +208,15 @@
     &__item {
       width: 100%;
       margin-top: 40px;
+      &:nth-child(1) {
+        order: 2;
+      }
       &:nth-child(2) {
         margin-top: 40px;
+        order: 1;
+      }
+      &:nth-child(3) {
+        order: 3;
       }
     }
   }
@@ -443,6 +451,7 @@
     &__item {
       &-btn {
         margin-top: 40px;
+        width: 122px;
       }
     }
     &__person {
@@ -687,7 +696,9 @@
     &__inner {
       &::after {
         right: auto;
-        font-size: 30rem;
+        font-size: 27rem;
+        left: -57px;
+        top: 0;
       }
     }
     &__right {

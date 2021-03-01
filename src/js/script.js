@@ -5,6 +5,7 @@ import popup from './modules/popup';
 import burger from './modules/burger';
 import toggleSubMenu from "./modules/menu"
 
+
 window.addEventListener("DOMContentLoaded", () => {
 
 // HEADER SEARCH
@@ -17,8 +18,6 @@ document.addEventListener('click', (e) => {
      e.target !== searchInput) {
     searchInput.classList.remove('visible')
   }
-
-  console.log(e.target.tagName)
 })
 
 const showInput = () => searchInput.classList.toggle('visible');
@@ -39,7 +38,7 @@ if(window.innerWidth <= 768) {
     dots: true,
     items: 2,
     dotsEach: 2,
-})
+  })
 }
 
 
@@ -52,10 +51,7 @@ toggleSubMenu('#about-sub a', '.about-sub');
 
 
 // SAL INIT
-sal({
-  threshold: 1,
-  once: false,
-});
+sal();
 
 
 // SET STYLE TO BANER TITLE

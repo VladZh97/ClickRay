@@ -270,6 +270,7 @@ a {
   }
   .header__nav-search .fa-search {
     color: #fff;
+    font-size: 13px;
   }
   .header__nav-input {
     width: 100%;
@@ -287,7 +288,7 @@ a {
   }
   .header__menu {
     position: absolute;
-    top: 76px;
+    top: 50px;
     left: 0;
     width: 450px;
     z-index: 3;
@@ -404,6 +405,7 @@ a {
   color: #fff;
   text-align: center;
   padding: 0 15px;
+  margin: 0 10px;
 }
 .baner__title {
   font-size: 4.8rem;
@@ -560,8 +562,15 @@ a {
     width: 100%;
     margin-top: 40px;
   }
+  .about__item:nth-child(1) {
+    order: 2;
+  }
   .about__item:nth-child(2) {
     margin-top: 40px;
+    order: 1;
+  }
+  .about__item:nth-child(3) {
+    order: 3;
   }
 }
 @media screen and (max-width: 575px) {
@@ -766,6 +775,7 @@ a {
 @media screen and (max-width: 767px) {
   .testimonial__item-btn {
     margin-top: 40px;
+    width: 122px;
   }
   .testimonial__person-image {
     width: 80px;
@@ -957,7 +967,9 @@ a {
 @media screen and (max-width: 767px) {
   .work__inner::after {
     right: auto;
-    font-size: 30rem;
+    font-size: 27rem;
+    left: -57px;
+    top: 0;
   }
   .work__right {
     display: none;

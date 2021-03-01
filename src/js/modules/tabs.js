@@ -30,7 +30,7 @@ const tabs = () => {
        target.parentNode.classList.contains('testimonial__person-image')) {
          
         tab.forEach((item, i) => {
-          if(target == item || target.parentNode == item) {
+          if(target === item || target.parentNode === item) {
             hideContent();
             showContent(i);
           }

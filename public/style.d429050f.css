@@ -360,6 +360,7 @@ a {
     display: none;
   }
   .header__contact {
+    display: block;
     margin-top: 79px;
     pointer-events: none;
   }
@@ -371,6 +372,9 @@ a {
   }
   .header__contact i {
     pointer-events: visible;
+  }
+  .header__contact .contact__icons {
+    display: block;
   }
 }
 @media screen and (max-width: 575px) {
@@ -1084,13 +1088,14 @@ a {
 .footer-bottom__copy {
   font-size: 1.6rem;
 }
-.footer-bottom__link {
+
+.contact__link {
   margin-right: 24px;
 }
-.footer-bottom__link:hover i {
+.contact__link:hover i {
   color: #3344bf;
 }
-.footer-bottom__link i {
+.contact__link i {
   font-size: 20px;
   color: #999;
 }
@@ -1117,7 +1122,8 @@ a {
   .footer__right {
     margin-top: 69px;
   }
-  .footer-bottom__icons {
+
+  .contact__icons {
     display: none;
   }
 }

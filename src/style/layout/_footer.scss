@@ -49,18 +49,22 @@
     &__copy {
       font-size: 1.6rem;
     }
-    &__link {
-      margin-right: 24px;
-      &:hover {
-        i {
-          color: $color;
-        }
-      }
-      i {
-        font-size: 20px;
-        color: #999;
-      }
+
+  }
+
+}
+
+
+.contact__link {
+  margin-right: 24px;
+  &:hover {
+    i {
+      color: $color;
     }
+  }
+  i {
+    font-size: 20px;
+    color: #999;
   }
 }
 
@@ -91,12 +95,9 @@
     &__right {
       margin-top: 69px;
     }
-
-    &-bottom {
-      &__icons {
-        display: none;
-      }
-    }
+  }
+  .contact__icons {
+    display: none;
   }
 }
 
